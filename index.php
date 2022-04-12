@@ -12,9 +12,9 @@ if (isset($_POST['submit'])) {
    $insert = mysqli_query($conn, "INSERT INTO `contact_form`(name, email, number, date) VALUES('$name','$email','$number','$date')") or die('query failed');
 
    if ($insert) {
-      $message[] = 'appointment made successfully!';
+      $message[] = 'Rendez-vous pris avec succès !';
    } else {
-      $message[] = 'appointment failed';
+      $message[] = 'Prise de rendez-vous échouée';
    }
 }
 
@@ -27,6 +27,7 @@ if (isset($_POST['submit'])) {
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="./images/Cartoon-tooth-and-toothbrush-on-transparent-background-PNG.png">
    <title>Dental Care</title>
 
    <!-- font awesome cdn link  -->
@@ -123,43 +124,43 @@ if (isset($_POST['submit'])) {
 
    <section class="services" id="services">
 
-      <h1 class="heading">our services</h1>
+      <h1 class="heading">Nos services</h1>
 
       <div class="box-container container">
 
          <div class="box">
             <img src="images/icon-1.svg" alt="">
-            <h3>Alignment specialist</h3>
+            <h3>Spécialiste de l'alignement</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, non?</p>
          </div>
 
          <div class="box">
             <img src="images/icon-2.svg" alt="">
-            <h3>Cosmetic dentistry</h3>
+            <h3>Dentisterie cosmétique</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, non?</p>
          </div>
 
          <div class="box">
             <img src="images/icon-3.svg" alt="">
-            <h3>Oral hygiene experts</h3>
+            <h3>Experts en hygiène bucco-dentaire</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, minima?</p>
          </div>
 
          <div class="box">
             <img src="images/icon-4.svg" alt="">
-            <h3>Root canal specialist</h3>
+            <h3>Spécialiste des canaux radiculaires</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, minima?</p>
          </div>
 
          <div class="box">
             <img src="images/icon-5.svg" alt="">
-            <h3>Live dental advisory</h3>
+            <h3>Consultation dentaire en direct</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, minima?</p>
          </div>
 
          <div class="box">
             <img src="images/icon-6.svg" alt="">
-            <h3>Cavity inspection</h3>
+            <h3>Inspection de la cavité</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, minima?</p>
          </div>
 
@@ -173,25 +174,25 @@ if (isset($_POST['submit'])) {
 
    <section class="process">
 
-      <h1 class="heading">work process</h1>
+      <h1 class="heading">Processus de travail</h1>
 
       <div class="box-container container">
 
          <div class="box">
             <img src="images/process-1.png" alt="">
-            <h3>Cosmetic Dentistry</h3>
+            <h3>Dentisterie cosmétique</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, excepturi?</p>
          </div>
 
          <div class="box">
             <img src="images/process-2.png" alt="">
-            <h3>Pediatric Dentistry</h3>
+            <h3>Dentisterie pédiatrique</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, excepturi?</p>
          </div>
 
          <div class="box">
             <img src="images/process-3.png" alt="">
-            <h3>Dental Implants</h3>
+            <h3>Implants dentaires</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, excepturi?</p>
          </div>
 
@@ -205,7 +206,7 @@ if (isset($_POST['submit'])) {
 
    <section class="reviews" id="reviews">
 
-      <h1 class="heading"> satisfied clients </h1>
+      <h1 class="heading">Clients satisfaits</h1>
 
       <div class="box-container container">
 
@@ -261,7 +262,7 @@ if (isset($_POST['submit'])) {
 
    <section class="contact" id="contact">
 
-      <h1 class="heading">make appointment</h1>
+      <h1 class="heading">Prendre un rendez-vous</h1>
 
       <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
          <?php
@@ -271,15 +272,15 @@ if (isset($_POST['submit'])) {
             }
          }
          ?>
-         <span>your name :</span>
+         <span>votre nom :</span>
          <input type="text" name="name" placeholder="enter your name" class="box" required>
-         <span>your email :</span>
+         <span>votre adresse-email :</span>
          <input type="email" name="email" placeholder="enter your email" class="box" required>
-         <span>your number :</span>
+         <span>votre numéro :</span>
          <input type="number" name="number" placeholder="enter your number" class="box" required>
-         <span>appointment date :</span>
+         <span>date de rendez-vous :</span>
          <input type="datetime-local" name="date" class="box" required>
-         <input type="submit" value="make appointment" name="submit" class="link-btn">
+         <input type="submit" value="prendre un rendez-vous" name="submit" class="link-btn">
       </form>
 
    </section>
@@ -294,33 +295,33 @@ if (isset($_POST['submit'])) {
 
          <div class="box">
             <i class="fas fa-phone"></i>
-            <h3>phone number</h3>
-            <p>+123-456-7890</p>
-            <p>+111-222-3333</p>
+            <h3>numéro de téléphone</h3>
+            <p>+33-03-00-00-00-00</p>
+            <p>+33-03-00-00-00-00</p>
          </div>
 
          <div class="box">
             <i class="fas fa-map-marker-alt"></i>
-            <h3>our address</h3>
-            <p>mumbai, india - 400104</p>
+            <h3>notre addresse</h3>
+            <p>4 Rue du Dôme - 67000 Strasbourg</p>
          </div>
 
          <div class="box">
             <i class="fas fa-clock"></i>
-            <h3>opening hours</h3>
-            <p>00:07am to 10:00pm</p>
+            <h3>Heures d'ouverture</h3>
+            <p>07h:00 à 23h:00</p>
          </div>
 
          <div class="box">
             <i class="fas fa-envelope"></i>
-            <h3>email address</h3>
-            <p>shaikhanas@gmail.com</p>
-            <p>anasbhai@gmail.com</p>
+            <h3>adresse-email</h3>
+            <p>metazo0412@gmail.com</p>
+            <p>metambp5@gmail.com</p>
          </div>
 
       </div>
 
-      <div class="credit"> &copy; copyright @ <?php echo date('Y'); ?> by <span>mr. web designer</span> </div>
+      <div class="credit"> &copy; copyright @ <?php echo date('Y'); ?> by <span>MED DEV</span> </div>
 
    </section>
 
