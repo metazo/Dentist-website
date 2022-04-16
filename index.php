@@ -249,7 +249,7 @@ if (isset($_POST['submit'])) {
                <i class="fas fa-star-half-alt"></i>
             </div>
             <h3>john deo</h3>
-            <span>satisfied client</span>
+            <span>Clent satisfait</span>
          </div>
 
       </div>
